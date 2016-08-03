@@ -5,12 +5,12 @@ export default Ember.Route.extend({
     return this.get('store').findAll('trip');
   },
   actions: {
-      changeTripStatus(id) {
-        this.store.findRecord('trip', id).then(function(trip) {
-          // ...after the record has loaded
-          trip.set('visited', true);
-          trip.save();
-        });
+      changeTripStatus(trip) {
+        trip.set('visited', true);
+        trip.save();
+      },
+      deleteTrip(trip) {
+        trip.destroyRecord();
       }
   }
 });

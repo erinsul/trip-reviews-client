@@ -1,15 +1,1 @@
-{{#link-to 'profile' class="btn btn-default"}}Close{{/link-to}}
-<div class="container-fluid">
-  <div class="col-md-6">
-    <h4>Places I've been</h4>
-      {{#each model as |trip|}}
-        {{trips-taken trip=trip}}
-      {{/each}}
-  </div>
-  <div class="col-md-6">
-    <h4>Places I want to go</h4>
-      {{#each model as |trip|}}
-        {{trips-want trip=trip click='changeTripStatus'}}
-      {{/each}}
-  </div>
-</div>
+{{profile-trips trip=model changeTripStatus='changeTripStatus' deleteTrip='deleteTrip'}}

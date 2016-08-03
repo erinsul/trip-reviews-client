@@ -1,3 +1,7 @@
-{{#if trip.visited}}
-  {{trip.place.name}} <button class="btn btn-default">See my comments</button>
-{{/if}}
+<ul>
+{{#each trip as |trip|}}
+  {{#if trip.visited}}
+    {{trips-taken/item trip=trip remove='deleteTrip'}}
+  {{/if}}
+{{/each}}
+</ul>

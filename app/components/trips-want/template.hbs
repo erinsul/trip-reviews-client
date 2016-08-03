@@ -1,3 +1,7 @@
-{{#unless trip.visited}}
-  {{trip.place.name}}<button class="btn btn-default" {{action "click" on="click"}}>Move to visited!</button>
-{{/unless}}
+<ul>
+{{#each trip as |trip|}}
+  {{#unless trip.visited}}
+    {{trips-want/item trip=trip remove='deleteTrip' move='changeTripStatus'}}
+  {{/unless}}
+{{/each}}
+</ul>
