@@ -1,0 +1,11 @@
+<form {{action "submit" on="submit"}}>
+  <label for="name">Name:</label>
+  {{input type="text"
+        placeholder="Your Name"
+        value=profile.name}}
+  <label for="bio">About Me:</label>
+  {{input type="text"
+        placeholder="Let us know a little about you!"
+        value=profile.bio}}
+  <input type="submit" value="Create">
+</form>

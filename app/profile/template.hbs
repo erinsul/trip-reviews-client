@@ -1,0 +1,6 @@
+  {{#each model as |profile| }}
+    {{user-profile profile=profile}}
+  {{/each}}
+
+{{#link-to 'profile.trips'}}View My Trips!{{/link-to}}
+{{outlet}}
