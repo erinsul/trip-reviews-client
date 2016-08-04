@@ -12,11 +12,11 @@ Router.map(function () {
   this.route('users');
   this.route('profile', { path: '/profiles' }, function() {
     this.route('trips', { path: '/trips' });
+    this.route('trip', { path: '/trips/:trip_id' });
   });
   this.route('create-profile');
   this.route('search');
   this.route('all-places');
-  this.route('trip', { path: '/trips/:id'});
 });
 
 export default Router;
