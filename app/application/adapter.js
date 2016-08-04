@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import ActiveModelAdapter from 'active-model-adapter';
+import ENV from 'trip-reviews-client/config/environment';
 
 export default ActiveModelAdapter.extend({
   auth: Ember.inject.service(),
