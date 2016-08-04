@@ -1,2 +1,7 @@
-{{#link-to 'search.places' class='btn btn-default'}}Show All Places{{/link-to}}
-{{outlet}}
+{{input value=name placeholder="enter name of place to search"}}
+<ul>
+{{#each model as |place| }}
+  <li>{{city-place place=place createTrip='createTrip'}}</li>
+{{/each}}
+</ul>
+{{#link-to 'all-places'}}Show all places{{/link-to}}

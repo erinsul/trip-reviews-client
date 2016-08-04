@@ -14,9 +14,8 @@ Router.map(function () {
     this.route('trips', { path: '/trips' });
   });
   this.route('create-profile');
-  this.route('search', function() {
-    this.route('places', { path: '/places' });
-  });
+  this.route('search');
+  this.route('all-places');
 });
 
 export default Router;

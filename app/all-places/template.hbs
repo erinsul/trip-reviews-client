@@ -1,8 +1,6 @@
-{{#link-to 'search' class='btn btn-default'}}Close All{{/link-to}}
+{{#link-to 'search'}}Back to search{{/link-to}}
 <ul>
 {{#each model as |place| }}
   <li>{{city-place place=place createTrip='createTrip'}}</li>
 {{/each}}
 </ul>
-
-{{outlet}}
