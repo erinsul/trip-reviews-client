@@ -16,6 +16,7 @@ Router.map(function () {
   this.route('create-profile');
   this.route('search');
   this.route('all-places');
+  this.route('trip', { path: '/trips/:id'});
 });
 
 export default Router;
