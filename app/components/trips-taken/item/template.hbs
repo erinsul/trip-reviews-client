@@ -1,4 +1,4 @@
 <li>{{trip.place.name}}
-<button class="btn btn-default">See my comments</button>
+{{#link-to 'trip' trip}}<button class="btn btn-default">See/add tags</button>{{/link-to}}
 <button class="btn btn-danger" {{action "remove" on="click"}}>Delete</button>
 </li>

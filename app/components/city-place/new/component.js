@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   actions: {
     submit () {
       this.sendAction('submit', this.get('place'));
-      this.set('place', "");
+      // this.set('place', "");
     }
   },
 });

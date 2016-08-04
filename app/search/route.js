@@ -19,6 +19,7 @@ export default Ember.Route.extend({
       createPlace(data) {
         let place=this.get('store').createRecord('place', data);
         place.save();
+        this.transitionTo('all-places');
       }
     }
 
