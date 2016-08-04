@@ -6,7 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    apiHost: 'http://http://my-trips-api.herokuapp.com/'
+    apiHost: 'http://my-trips-api.herokuapp.com/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,10 +20,7 @@ module.exports = function(environment) {
     }
   };
 
-  if (environment === 'production') {
-    ENV.baseURL = '/';
-    ENV.locationType = 'hash';
-    ENV.apiHost = 'http://http://my-trips-api.herokuapp.com/'
+  if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -44,7 +41,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/';
+    ENV.locationType = 'hash';
+    ENV.apiHost = 'http://my-trips-api.herokuapp.com/';
   }
 
   return ENV;
