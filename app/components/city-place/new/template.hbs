@@ -1,0 +1,12 @@
+<h5>Can't find a place you're looking for? Add it!</h5>
+<form {{action "submit" on="submit"}}>
+  <label for="name">Name of place:</label>
+  {{input type="text"
+        placeholder="ex: Beijing"
+        value=place.name}}
+  <label for="bio">Country:</label>
+  {{input type="text"
+        placeholder="ex: China"
+        value=place.country}}
+  <input type="submit" value="Create">
+</form>
