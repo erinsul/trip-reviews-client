@@ -15,6 +15,7 @@ export default Ember.Route.extend({
       createTrip(data) {
         let trip = this.get('store').createRecord('trip', data);
         trip.save();
+        this.transitionTo('profile.trips')
       },
       createPlace(data) {
         let place=this.get('store').createRecord('place', data);
