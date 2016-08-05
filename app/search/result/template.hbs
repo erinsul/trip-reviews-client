@@ -1,0 +1,6 @@
+<ul>
+{{#each model as |place| }}
+  <li>{{city-place place=place createTrip='createTrip'}}</li>
+{{/each}}
+</ul>
+{{city-place/new submit='createPlace'}}

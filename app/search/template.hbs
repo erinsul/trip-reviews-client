@@ -1,8 +1,4 @@
 {{input value=name placeholder="enter name of place to search"}}
-<ul>
-{{#each model as |place| }}
-  <li>{{city-place place=place createTrip='createTrip'}}</li>
-{{/each}}
-</ul>
+{{#link-to 'search.result' (query-params name=name)}}<button>Search</button>{{/link-to}}
+{{outlet}}
 {{#link-to 'all-places'}}Show all places{{/link-to}}
-{{city-place/new submit='createPlace'}}
