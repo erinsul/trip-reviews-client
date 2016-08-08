@@ -1,4 +1,6 @@
-{{input value=name placeholder="enter name of place to search"}}
-{{#link-to 'search.result' (query-params name=name)}}<button>Search</button>{{/link-to}}
+<div class="box">
+{{input value=name placeholder="enter name of place to search" class="inline"}}
+{{#link-to 'search.result' (query-params name=name)}}<button class="btn btn-default inline">Search</button>{{/link-to}}
 {{outlet}}
 {{#link-to 'all-places'}}Show all places{{/link-to}}
+</div>

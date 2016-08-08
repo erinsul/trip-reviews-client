@@ -4,6 +4,7 @@
 body {
   font-family: 'Lora', serif;
   background-image: url(../images/Hualien.jpg);
+  background-color: #ddd;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,4 +15,20 @@ body {
 
 .nav {
   letter-spacing: .3em;
+}
+
+.box {
+  background-color:  rgba(255,255,255,.5);
+  text-align: center;
+  padding: 50px;
+  border-radius: 25%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.inline {
+  display: inline-block;
 }

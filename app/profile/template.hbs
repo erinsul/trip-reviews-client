@@ -1,6 +1,7 @@
+<div class="box">
 {{#each model as |profile| }}
   {{user-profile profile=profile}}
 {{/each}}
-
 {{#link-to 'profile.trips' class="btn btn-default"}}View My Trips!{{/link-to}}
 {{outlet}}
+</div>

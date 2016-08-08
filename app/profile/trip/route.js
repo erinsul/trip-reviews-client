@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model(params) {
     return Ember.RSVP.hash({
       trip: this.get('store').findRecord('trip', params.trip_id),
-      tags: this.store.findAll('tag')
+      tags: this.store.findAll('tag'),
     });
   },
 
