@@ -1,6 +1,10 @@
 {{#link-to 'search'}}Back to search{{/link-to}}
-<ul>
-{{#each model as |place| }}
-  <li>{{city-place place=place createTrip='createTrip'}}</li>
-{{/each}}
-</ul>
+<div class="container fluid">
+  <ul>
+    {{#each model as |place| }}
+    <div class="col-sm-3 no-padding">
+      <li>{{city-place place=place createTrip='createTrip'}}</li>
+    </div>
+    {{/each}}
+  </ul>
+</div>
