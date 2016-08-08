@@ -39,6 +39,7 @@
     "ember-data": "^2.5.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.5",
+    "ember-font-awesome": "2.1.1",
     "ember-load-initializers": "^0.5.1",
     "ember-local-storage": "1.1.0",
     "ember-resolver": "^2.0.3",
