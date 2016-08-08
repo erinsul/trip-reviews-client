@@ -14,9 +14,17 @@ export default Ember.Route.extend({
   actions: {
       createTrip(data) {
         let trip = this.get('store').createRecord('trip', data);
-        trip.save();
-        this.transitionTo('profile.trips')
+        trip.save()
+        .then(()=> {
+          this.transitionTo('profile.trips');
+        })
+        .catch(() => {
+          // trip.deleteRecord();
+          this.get('flashMessages')
+          .danger('That trip could not be saved.');
+        });
       },
+
       createPlace(data) {
         let place=this.get('store').createRecord('place', data);
         place.save();
