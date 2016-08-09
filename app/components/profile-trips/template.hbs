@@ -1,11 +1,11 @@
 {{#link-to 'profile' class="btn btn-default"}}Close{{/link-to}}
 <div class="container-fluid">
   <div class="col-md-6">
-    <h4>Places I've been</h4>
+    <h3>Places I've been</h3>
         {{trips-taken trip=trip deleteTrip='deleteTrip'}}
   </div>
   <div class="col-md-6">
-    <h4>Places I want to go</h4>
+    <h3>Places I want to go</h3>
         {{trips-want trip=trip changeTripStatus='changeTripStatus' deleteTrip='deleteTrip'}}
   </div>
 </div>
