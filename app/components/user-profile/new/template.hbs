@@ -1,3 +1,4 @@
+<h2>Please create a profile in order to start adding trips!</h2>
 <form {{action "submit" on="submit"}}>
   <label for="name">Name:</label>
   {{input type="text"
@@ -7,5 +8,5 @@
   {{input type="text"
         placeholder="Let us know a little about you!"
         value=profile.bio}}
-  <input type="submit" value="Create">
+  <input type="submit" value="Create" class="btn btn-default">
 </form>
